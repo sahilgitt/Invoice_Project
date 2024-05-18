@@ -1,0 +1,29 @@
+.head-invoice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f50a84;
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 50px;
+    
+  }
+
+  .create-form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #e3b17c;
+    padding: 10px 20px;
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+
+  
+
+
+
+
+

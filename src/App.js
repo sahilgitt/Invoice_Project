@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Mainpage from './components/Mainpage';
+import Create from './components/Create';
+import { createContext, useState } from 'react';
+
+const InvoiceContext = createContext();
 
 function App() {
+  const [invoiceData, setInvoiceData] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <InvoiceContext.Provider value={{ invoiceData, setInvoiceData }}>
+      <BrowserRouter>
+        <div className="App">
+          <Routes>
+            <Route path='/' element={<Mainpage />} />
+            <Route path='/create' element={<Create />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </InvoiceContext.Provider>
   );
 }
 
 export default App;
+export { InvoiceContext };
+
+

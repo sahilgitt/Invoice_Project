@@ -1,0 +1,111 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f50a84;
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 50px;
+    
+  }
+
+.navbar-2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #e3b17c;
+    padding: 10px 20px;
+    margin-left: 90px;
+    margin-right: 90px;
+    /* margin-top: 10px; */
+  }
+
+  .table{
+    
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 1px;
+    background-color: #f427ba;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 10px;
+  } 
+
+  .head th {
+    padding: 15px 70px; /* Increase padding to create more space */
+    text-align: center;
+  }
+
+  .btn-container{
+    margin-right: 750px;
+  }
+
+
+  .create-btn {
+    background-color: #e90707; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+  }
+  
+  /* Hover effect */
+  .create-btn:hover {
+    background-color: #dd222b; /* Darker green */
+  }
+
+  
+  .search-btn {
+    background-color: #e90707; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  /* Hover effect */
+  .search-btn:hover {
+    background-color: #dd222b; /* Darker green */
+  }
+  
+  .search-container{
+    display: flex;
+    align-items: center; /* Vertically center items */
+  }
+  
+  .search-input{
+    width: 300px;
+    height: 45px;
+    border: none;
+  }
+  
+  .search{
+    margin-right: 5px;
+  }
+  
+  .button{
+    margin-right:100px; /* Push the button to the right */
+  }
+
+  .head{
+    margin-left: 30px;
+  }
+
+  
+  
